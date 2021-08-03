@@ -36,6 +36,7 @@ a:hover {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  /* margin-top: -24%; */
 }
 
 .background {
@@ -536,6 +537,27 @@ a:hover {
   z-index: 10000000;
 }
 
+.video-btn:hover {
+  filter: brightness(140%);
+  transition: filter 0.2s;
+}
+
+.sound-btn {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  width: 80px;
+  top: 324%;
+  left: 79%;
+  transform: translate(-50%, -50%);
+  z-index: 10000000;
+}
+
+.sound-btn:hover {
+  filter: brightness(140%);
+  transition: filter 0.2s;
+}
+
 .feature-title-2 {
   text-align: left;
   margin-left: 52%;
@@ -553,6 +575,11 @@ a:hover {
   }
   .title-img {
     width: 80%;
+  }
+
+  .title {
+    font-size: 70px;
+    margin-bottom: 5px;
   }
   .container-feature {
     display: grid;

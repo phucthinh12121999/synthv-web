@@ -10,9 +10,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    <script src="https://dreamtonics.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 
 
@@ -84,6 +85,16 @@
         </div>
 
     </header>
+    <!-- <div class="container" style="    margin-top: 10%;">
+        <div class="row centered">
+            <div class="col-lg-12">
+                <h2>
+                    <img class="title-img"
+                        src="https://dreamtonics.com/wp-content/themes/dreamtonic/assets/img/svstudio.svg">
+                </h2>
+            </div>
+        </div>
+    </div> -->
     <div class="hero background"></div>
     <section style="padding:5%">
         <div class="container">
@@ -172,6 +183,79 @@
             </div>
         </div>
     </section>
+    <section style="padding:5%">
+        <div class="container">
+            <div class="feature-title">
+                <h1 class="feature-title-h">INTERFACE</h1>
+                <p>A Modern Interface</p>
+            </div>
+            <div class="container-feature">
+                <div class="column">
+                    <br />
+                    <p class="h6" style="font-size:13px; letter-spacing: .075em;
+            line-height: 1.8;">Dreamtonics is working with Resonant Design, a Berlin-based
+                        team of artists to create
+                        the best-ever music creation
+                        experience.<br />
+                        The new generation software integrates Synthesizer V’s signature piano roll work area with track
+                        arrangement
+                        capabilities and an innovative side panel layout, striking a good balance between information
+                        density and cleanliness.<br />
+                        Along with the refined layout is the extensive use of vector graphics that fit well with
+                        high-DPI monitors and a wide
+                        range of display devices.<br />
+                        Users also benefit from the dark scheme and a mild contrast level optimized to reduce fatigue.
+                    </p>
+                </div>
+                <div class="column ">
+                    <a href="javascript:sound();">
+                        <img src="./img/feature-engine.png" class="feature-img ">
+                        <img src="./img/sound-icon.svg" alt="音声再生ボタン" class="sound-btn ">
+                    </a>
+                    <audio id="sound-file" preload="auto">
+                        <source src="./img/gotta-be-you.mp3">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding:5%">
+        <div class="container">
+            <div class="feature-title-2">
+                <h1 class="feature-title-h">LIVE RENDERING</h1>
+                <p>Instant Feedback </p>
+            </div>
+            <div class="container-feature-2">
+                <div class="column1">
+                    <br />
+                    <p class="h6" style="font-size:13px; letter-spacing: .075em;
+                    line-height: 1.8;">
+                        All edits get rendered on-the-fly while you are working on the song!<br />
+                        Powerful visualization options built into the multi-functional piano roll provide almost
+                        immediate feedback with no need
+                        to hit the play button.<br />
+                        Listen to your work whenever you like and you won’t be bothered by the slow rendering, because
+                        the editor knows which
+                        part you want to hear Now, all thanks to the most sophisticated multi-thread program design.
+                    </p>
+                </div>
+                <div class="column1 feature-vid">
+                    <video id="video2" loop="loop" style="width: 137%;">
+                        <source src="./img/tuning-demo.mp4" type="video/mp4">
+                    </video>
+                    <img src="./img/play-icon.svg" class="video-btn" id="video-btn2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function sound() {
+            if (typeof (document.getElementById('sound-file').currentTime) !== 'underfined') {
+                document.getElementById('sound-file').currentTime = 0
+            }
+            document.getElementById('sound-file').play()
+        }
+    </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/dist.js"></script>
