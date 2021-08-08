@@ -459,6 +459,7 @@ body {
 }
 
 .title-img {
+  margin: 21% auto;
 }
 
 .title {
@@ -689,6 +690,12 @@ body {
   display: inline-block;
 }
 
+@media (max-width: 1200px) {
+  .title-img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1070px) {
   .feature-support {
     grid-template-columns: auto 70%;
@@ -704,6 +711,13 @@ body {
 }
 
 @media (max-width: 990px) {
+  .title-img {
+    width: 100%;
+  }
+
+  .hero {
+    height: 55vh;
+  }
   .feature-support {
     grid-template-columns: 52% 59%;
   }
@@ -717,10 +731,11 @@ body {
     text-align: center;
   }
   .hero {
-    height: 58vh;
+    height: 39vh;
   }
   .title-img {
     width: 80%;
+    margin: 20% auto auto auto;
   }
 
   .title {
