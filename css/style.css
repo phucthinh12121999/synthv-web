@@ -15,9 +15,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 a {
@@ -28,6 +27,11 @@ a {
 a,
 a:hover {
   text-decoration: none !important;
+}
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .hero {
@@ -511,7 +515,7 @@ a:hover {
 }
 
 .feature-title-h {
-  font-size: 70px;
+  font-size: 63px;
   font-weight: 300;
   /* color: #fff; */
   position: relative;
@@ -619,6 +623,15 @@ a:hover {
   margin-bottom: 63px;
 }
 
+.lineup-content h3 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  /* color: #fff; */
+  margin-bottom: -5px;
+}
+
 .lineup-img {
   position: relative;
   display: block;
@@ -645,11 +658,54 @@ a:hover {
   color: #7b9f35;
   display: inline-block;
 }
-@media (max-width: 990px) {
+
+.feature-title {
+  text-align: left;
+  margin-right: 45%;
+}
+
+.lineup-content span {
+  font-size: 10px;
+  /* color: hsla(0, 0%, 100%, 0.7); */
+  letter-spacing: 0.06em;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.lineup-content p {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  line-height: 1.55;
+  /* color: #fff; */
+}
+
+.lineup-download:hover {
+  opacity: 0.6;
+}
+
+.lineup-download {
+  font-size: 13px;
+  color: #7b9f35;
+  display: inline-block;
+}
+
+@media (max-width: 1070px) {
+  .feature-support {
+    grid-template-columns: auto 70%;
+  }
+}
+
+@media (max-width: 995px) {
   .lineup-contents {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 5px;
+  }
+}
+
+@media (max-width: 990px) {
+  .feature-support {
+    grid-template-columns: 52% 59%;
   }
 }
 
@@ -722,14 +778,14 @@ a:hover {
   }
 
   .video-btn {
-    width: 70px;
+    width: 90px;
     top: 50%;
     left: 70%;
   }
 
   .sound-btn {
-    width: 70px;
-    top: 380%;
+    width: 90px;
+    top: 393%;
     left: 58%;
   }
 
@@ -745,5 +801,67 @@ a:hover {
   .feature-support h3 {
     font-size: 34px;
     margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sound-btn {
+    width: 90px;
+    top: 415%;
+    left: 58%;
+  }
+}
+
+@media (max-width: 765px) {
+  .sound-btn {
+    width: 90px;
+    top: 390%;
+    left: 54%;
+  }
+}
+
+@media (max-width: 760px) {
+  .lineup-contents {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+  }
+
+  .sound-btn {
+    width: 90px;
+    top: 377%;
+    left: 55%;
+  }
+}
+
+@media (max-width: 700px) {
+  /* .lineup-contents {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+  } */
+
+  .sound-btn {
+    width: 90px;
+    top: 391%;
+    left: 55%;
+  }
+}
+
+@media (max-width: 570px) {
+  .lineup-contents {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+  }
+
+  .lineup-content {
+    width: 200px;
+  }
+
+  .sound-btn {
+    width: 90px;
+    top: 385%;
+    left: 55%;
   }
 }
