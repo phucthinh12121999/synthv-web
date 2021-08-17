@@ -20,7 +20,7 @@
 </head>
 
 
-<body>
+<body data-spy="scroll" data-offset="64" data-target="#section-nav">
 
     <div id="stalker" class="" style="transform: translate(791px, 315px);"></div>
     <!-- <div id="preloader">
@@ -31,7 +31,7 @@
 
         </div>
     </div> -->
-    <div class="site-mobile-menu">
+    <div class="site-mobile-menu" id="section-nav">
         <div class="site-mobile-menu-header">
             <div class="site-mobile-menu-close mt-3">
                 <span class="icon-close2 js-menu-toggle"></span>
@@ -39,7 +39,7 @@
         </div>
         <div class="site-mobile-menu-body"></div>
     </div>
-    <header class="site-navbar" role="banner">
+    <header class="site-navbar" role="banner" id="section-nav">
 
         <div class="container">
             <div class="row align-items-center">
@@ -53,8 +53,32 @@
                     <nav class="site-navigation position-relative text-right" role="navigation">
 
                         <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-                            <li class="active"><a href="index.html"><span>Home</span></a></li>
+                            <li class="active"><a href="#"><span>Home</span></a></li>
+                            <!-- <li class="has-children">
+                                <a href="#">Dropdown</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Menu One</a></li>
+                                    <li><a href="#">Menu Two</a></li>
+                                    <li><a href="#">Menu Three</a></li>
+                                    <li><a href="#">Menu Four</a></li>
+                                </ul>
+                            </li> -->
                             <li class="has-children">
+                                <a href="#features"><span>Features</span></a>
+                                <ul class="dropdown arrow-top">
+                                    <li><a href="#interface">Interface</a></li>
+                                    <li><a href="#liverender">Live Rendering</a></li>
+                                    <li><a href="#synthengine">Synthesis Engine</a></li>
+                                    <li><a href="#tuning">Tuning</a></li>
+                                    <li><a href="#scripting">Scripting</a></li>
+
+                                </ul>
+                            </li>
+                            <!-- <li><a href="#features"><span>Features</span></a></li> -->
+                            <li><a href="#support"><span>Support</span></a></li>
+                            <li><a href="#lineup"><span>Line up</span></a></li>
+                            <li><a href="#gallery"><span>Gallery</span></a></li>
+                            <!-- <li class="has-children">
                                 <a href="about.html"><span>Dropdown</span></a>
                                 <ul class="dropdown arrow-top">
                                     <li><a href="#">Menu One</a></li>
@@ -70,11 +94,7 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
-                            <li><a href="listings.html"><span>Listings</span></a></li>
-                            <li><a href="about.html"><span>About</span></a></li>
-                            <li><a href="blog.html"><span>Blog</span></a></li>
-                            <li><a href="contact.html"><span>Contact</span></a></li>
+                            </li> -->
                         </ul>
                     </nav>
                 </div>
@@ -124,7 +144,7 @@
             </div>
         </div>
     </section>
-    <section style="    padding: 4%; padding-top: 1%; padding-bottom: 6%;" data-aos="fade-up">
+    <section style="    padding: 4%; padding-top: 1%; padding-bottom: 6%;" data-aos="fade-up" id="features">
         <div class="container">
             <div class="text-center">
                 <h1 class="title">FEATURES</h1>
@@ -132,7 +152,7 @@
             </div>
         </div>
     </section>
-    <section style="padding:5%">
+    <section style="padding:5%" id="interface">
         <div class="container">
             <div class="feature-title" data-aos="fade-left">
                 <h1 class="feature-title-h">INTERFACE</h1>
@@ -163,7 +183,7 @@
             </div>
         </div>
     </section>
-    <section style="padding:5%">
+    <section style="padding:5%" id="liverender">
         <div class="container">
             <div class="feature-title-2" data-aos="fade-right">
                 <h1 class="feature-title-h">LIVE RENDERING</h1>
@@ -191,7 +211,7 @@
             </div>
         </div>
     </section>
-    <section style="padding:5%">
+    <section style="padding:5%" id="synthengine">
         <div class="container">
             <div class="feature-title" data-aos="fade-left">
                 <h1 class="feature-title-h">SYNTHESIS ENGINE</h1>
@@ -227,7 +247,7 @@
             </div>
         </div>
     </section>
-    <section style="padding:5%">
+    <section style="padding:5%" id="tuning">
         <div class="container">
             <div class="feature-title-2" data-aos="fade-right">
                 <h1 class="feature-title-h">TUNING</h1>
@@ -258,7 +278,7 @@
             </div>
         </div>
     </section>
-    <section style="padding:5%">
+    <section style="padding:5%" id="scripting">
         <div class="container">
             <div class="feature-title" data-aos="fade-left">
                 <h1 class="feature-title-h">SCRIPTING</h1>
@@ -282,7 +302,7 @@
             </div>
         </div>
     </section>
-    <section style="padding:5%">
+    <section style="padding:5%" id="support">
         <div class="container">
             <div class="feature-support" data-aos="fade-up">
                 <h3>SUPPORT</h3>
@@ -294,7 +314,7 @@
             </div>
         </div>
     </section>
-    <section style="    padding: 4%; padding-top: 1%; padding-bottom: 6%;">
+    <section style="    padding: 4%; padding-top: 1%; padding-bottom: 6%;" id="lineup">
         <div class="container">
             <div class="text-center" data-aos="fade-up">
                 <h1 class="title">LINE UP</h1>
@@ -594,7 +614,7 @@
             </div>
         </div>
     </section>
-    <section style="    padding: 4%; padding-top: 1%; padding-bottom: 6%;">
+    <section style="    padding: 4%; padding-top: 1%; padding-bottom: 6%;" id="gallery">
         <div class="container">
             <div class="text-center" data-aos="fade-up">
                 <h1 class="title">GALLERY</h1>
