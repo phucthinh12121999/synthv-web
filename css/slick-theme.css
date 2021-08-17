@@ -157,7 +157,7 @@
 .slick-dots li button:focus:before {
   opacity: 1;
 }
-.slick-dots li button:before {
+/* .slick-dots li button:before {
   font-family: "slick";
   font-size: 6px;
   line-height: 20px;
@@ -177,8 +177,8 @@
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.slick-dots li.slick-active button:before {
+} */
+/* .slick-dots li.slick-active button:before {
   opacity: 0.75;
   color: black;
-}
+} */
